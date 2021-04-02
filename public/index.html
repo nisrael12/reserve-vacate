@@ -55,44 +55,63 @@
             <div class="left-side">
 
               <div class="column-1">
-                <h5>Grapevine, TX</h5>
                 
-                <label for="rooms">1 Room</label>
-                <input list="rooms" id="room" name="room" placeholder="1 Room">
+                <div class="row-1">
+                  <h5>Grapevine, TX</h5>
+                  
+                </div>
                 
-                <datalist id="rooms">
-                  <option value="1 Room">
-                  <option value="2 Rooms">
-                  <option value="3 Rooms">
-                </datalist>
-  
-                <input list="guests" id="guest" name="guest" placeholder="2 Guests">
-                <datalist id="guests">
-                  <option value="1 Guest">
-                  <option value="2 Guests">
-                  <option value="3 Guests">
-                  <option value="4 Guests">
-                  <option value="5 Guests">
-                    <option value="6 Guests">
-                    </datalist>
+                <div class="row-2">
+                  <input list="rooms" id="room" name="room" placeholder="1 Room">
+                  
+                  <datalist id="rooms">
+                    <option value="1 Room">
+                    <option value="2 Rooms">
+                    <option value="3 Rooms">
+                  </datalist>
+    
+                  <input list="guests" id="guest" name="guest" placeholder="2 Guests">
+                  <datalist id="guests">
+                    <option value="1 Guest">
+                    <option value="2 Guests">
+                    <option value="3 Guests">
+                    <option value="4 Guests">
+                    <option value="5 Guests">
+                      <option value="6 Guests">
+                  </datalist>
 
-                    <input type="text" id="code" name="code" placeholder="Enter Code (optional)">
+                </div>
+                
+                <div class="row-3">
+
+                  <input type="text" id="code" name="code" placeholder="Enter Code (optional)">
+                </div>
               </div>
               
               <div class="column-2">
                 
-                <div class="date">
+                <div class="row-1">
                   
-                  <label for="date">
-                  <input type="date" id="date" name="date">
+                  <div class="date">
+                    
+                    <label for="date">
+                    <input type="date" id="date" name="date">
+                  </div>
                 </div>
-                
+
+                <div class="row-2">
                   <input type="checkbox" id="flexible" name="flexible"
                   unchecked>
                   <label for="flexible">My dates are flexible</label>
+
+                </div>
+                
+                <div class="row-3">
+                  
                   <input type="checkbox" id="rewards" name="rewards"
                   unchecked>
                   <label for="rewards">Use my rewards points</label>
+                </div>
               </div>
                 
     

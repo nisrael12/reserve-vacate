@@ -3,7 +3,7 @@
 #reservation{
 
     .container-reservation{
-        padding: 50px 400px;
+        padding: 50px 50px;
         background: black;
         color: white;
 
@@ -23,15 +23,30 @@
                 .left-side{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                   
                     
                     
                     .column-1{
+                        display: grid;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        row-gap: 10px;
+
+                        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: white;
+                            opacity: 1; /* Firefox */
+                          }
 
                         input{
                             background: black;
                             border:none;
                             border-bottom: 1px solid blue;
                             color: white;
+
+                            
+                        }
+
+                        .row-2{
+                        display: inline-block;
                         }
 
 
