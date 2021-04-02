@@ -1,0 +1,52 @@
+
+
+#reservation{
+
+    .container-reservation{
+        padding: 50px 400px;
+        background: black;
+        color: white;
+
+        h4{
+            font-size: 1.3rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        } 
+        .reserve-form{
+            
+
+            form{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                
+                .left-side{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    
+                    
+                    .column-1{
+
+                        input{
+                            background: black;
+                            border:none;
+                            border-bottom: 1px solid blue;
+                            color: white;
+                        }
+
+
+                    }
+                    
+                    .column-2{
+                    
+                    }
+                }
+    
+                .right-side{
+    
+                }
+            }
+        }
+
+    }
+}

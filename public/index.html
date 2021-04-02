@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World</title>
+    <link rel="canonical" href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ad38f1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+
+  <body>
+    
+    <section id="header">
+
+      <div class="header-container">
+        <div class="logo">
+          <h1>Reserve Vacate</h1>
+        </div>
+  
+        <div class="menu">
+          <div class="section-1">
+            <ul>
+              <li><a href="#"><i class="far fa-user"></i> Sign In</a></li>
+              <li><a href="#">Rewards</a></li>
+            </ul>
+          </div>
+  
+          <div class="section-2">
+            <ul>
+              <li><a href="#">Our Resort</a></li>
+              <li><a href="#">Meetings</a></li>
+              <li><a href="#">Weddings</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li class="reserve"><a href="#">Reserve Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="reservation">
+      <div class="container-reservation">
+        <h4>Make a reservation</h4>
+
+        <div class="reserve-form">
+          <form action="">
+            
+            <div class="left-side">
+
+              <div class="column-1">
+                <h5>Grapevine, TX</h5>
+                
+                <label for="rooms">1 Room</label>
+                <input list="rooms" id="room" name="room" placeholder="1 Room">
+                
+                <datalist id="rooms">
+                  <option value="1 Room">
+                  <option value="2 Rooms">
+                  <option value="3 Rooms">
+                </datalist>
+  
+                <input list="guests" id="guest" name="guest" placeholder="2 Guests">
+                <datalist id="guests">
+                  <option value="1 Guest">
+                  <option value="2 Guests">
+                  <option value="3 Guests">
+                  <option value="4 Guests">
+                  <option value="5 Guests">
+                    <option value="6 Guests">
+                    </datalist>
+
+                    <input type="text" id="code" name="code" placeholder="Enter Code (optional)">
+              </div>
+              
+              <div class="column-2">
+                
+                <div class="date">
+                  
+                  <label for="date">
+                  <input type="date" id="date" name="date">
+                </div>
+                
+                  <input type="checkbox" id="flexible" name="flexible"
+                  unchecked>
+                  <label for="flexible">My dates are flexible</label>
+                  <input type="checkbox" id="rewards" name="rewards"
+                  unchecked>
+                  <label for="rewards">Use my rewards points</label>
+              </div>
+                
+    
+    
+            </div>
+
+            <div class="right-side">
+              
+              <input type="submit" value="Check Availabilty">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+    
+    <script src="/js/dist/vendors~FirstComp.js"></script>
+    <script src="/js/dist/FirstComp.js"></script>
+    <script src="/js/dist/main.js"></script>
+  </body>
+
+</html>
