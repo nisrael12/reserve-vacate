@@ -2,66 +2,225 @@
 
 #reservation{
 
-    .container-reservation{
-        padding: 50px 50px;
-        background: black;
-        color: white;
+  background: black;
 
-        h4{
+
+
+  .reservation__container{
+    padding: 15px 350px;
+    width: 100%;
+    
+    h4{
+      font-size: 1.1rem;
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 15px 0;
+    }
+
+    .reservation__form{
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      font-size: 1.3rem;
+      column-gap: 20px;
+      align-items: baseline;
+
+      .reservation__form-column-1{
+
+        
+
+        .form-column-1__rooms, .form-column-1__guests, .form-column-1__code{
+          background: black;
+          color: white;
+          border: none;
+          border-bottom: 1px solid white;
+          font-size: 1.3rem;
+          margin: 10px 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 100%;
+          
+          
+        }
+
+        .form-selected-row{
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+
+
+        input::placeholder{
+          color: white;
+        }
+
+        
+      }
+
+      .reservation__form-column-2{
+        display: flex;
+        flex-direction: column;
+
+
+        .form-column-2__date{
+          border-bottom: 1px solid white;
+           
+          .far{
+            float: right;
+          }
+          
+          input[type="date"] {
+            position: relative;
+            width: 100%;
+            background: black;
+            color: white;
+            border: none;
             font-size: 1.3rem;
-            font-weight: 100;
             text-transform: uppercase;
-            padding-bottom: 20px;
-        } 
-        .reserve-form{
+          }
+          
+          input[type="date"]::-webkit-calendar-picker-indicator {
+            color: transparent;
+            background: none;
+            z-index: 1;
+          }
+          
+          input[type="date"]:before {
+            color: transparent;
+            background: none;
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            content: '\f073';
+            /* This is the calendar icon in FontAwesome */
+            width: 15px;
+            height: 20px;
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            color: white;
+          }
+        }
+
+        .form-column-2__flex , .form-column-2__rewards{
+
+          span{
+            font-size: .8rem;
+          }
+
+          margin: 10px 0;
+
+          input[type="checkbox"] {
+            display: none;
+          }
+
+          input[type="checkbox"] + *::before {
+              content: "";
+              display: inline-block;
+              vertical-align: bottom;
+              width: 1rem;
+              height: 1rem;
+              margin-right: 0.3rem;
+              border-radius: 10%;
+              border-style: solid;
+              border-width: 0.1rem;
+              border-color: white;
+              cursor: pointer;
+          }
+
+          input[type="checkbox"]:checked + *::before {
+            color: black;
+            text-align: center;
+            background: white;
+            font-size: .8rem;
             
+          }
 
-            form{
-                display: grid;
-                grid-template-columns: 2fr 1fr;
-                
-                .left-side{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                   
-                    
-                    
-                    .column-1{
-                        display: grid;
-                        grid-template-rows: 1fr 1fr 1fr;
-                        row-gap: 10px;
+        }
+          
+      }
 
-                        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                            color: white;
-                            opacity: 1; /* Firefox */
-                          }
+      .reservation__form-column-3{
 
-                        input{
-                            background: black;
-                            border:none;
-                            border-bottom: 1px solid blue;
-                            color: white;
-
-                            
-                        }
-
-                        .row-2{
-                        display: inline-block;
-                        }
-
-
-                    }
-                    
-                    .column-2{
-                    
-                    }
-                }
-    
-                .right-side{
-    
-                }
+        .form-column-3__border{
+          border: 1px solid white;
+          margin: 4px;
+          
+          .form-column-3__button{
+            font-size: 1rem;
+            font-weight: 300;
+            background: white;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 5px 0;
+            cursor: pointer;
+            transition: all .4s ease-in-out ;
+  
+            &:hover{
+              background: grey;
+              color: white;
+            }
             }
         }
 
+        .form-column-3__links{
+          
+          a{
+            font-size: .7rem;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 15px 0;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+
+        }
+      }
     }
+}
+
+#content{
+
+  .content-container{
+    padding: 15px 350px;
+    width: 100%;
+
+    .content-section__first{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+  
+      .content-section__first-left, .content-section__first-right{
+        
+        img{
+          width: 100%;
+          height: 400px;
+        }
+
+        h4{
+          text-transform: uppercase;
+          padding: 30px 0;
+        }
+
+        p{
+          font-size: .9rem;
+          line-height: 1.5;
+          padding-bottom: 30px;
+        }
+
+        a{
+          
+          color: black;
+        }
+        
+      }
+    }
+  }
+
 }
