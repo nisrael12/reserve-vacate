@@ -280,11 +280,7 @@
       display: flex;
       column-gap: 20px;
 
-      &:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+      
       
 
       .content-section__third-left, .content-section__third-middle, .content-section__third-right{
