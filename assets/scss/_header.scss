@@ -9,10 +9,16 @@
         
 
         .logo{
-            margin-right: 20px;
-            h1{
+            display: flex;
+            margin: 0 20px 15px 0;
+
+            .fas{
                 font-size: 1.5rem;
+            }
+            h1{
+                font-size: 2.5rem;
                 white-space: nowrap;
+                font-family: 'Parisienne', cursive;
             }
 
             
