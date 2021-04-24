@@ -196,14 +196,16 @@
     .content-section__first{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(min-content, max-content);
       column-gap: 20px;
       padding: 60px 0;
+      width: 100%;
+      overflow: hidden;
   
       .content-section__first-left, .content-section__first-right{
-        
         img{
           height: auto;
-          max-width: 100%;
+          width: 100%;
         }
 
         h4{
@@ -277,18 +279,23 @@
 
     .content-section__third{
       padding: 60px 0;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(min-content, max-content);
       column-gap: 20px;
+      width: 100%;
+      // overflow: auto;
 
       
       
 
       .content-section__third-left, .content-section__third-middle, .content-section__third-right{
         
+      
 
         img{
           height: auto;
-          max-width: 100%;
+          width: 100%;
         }
 
         

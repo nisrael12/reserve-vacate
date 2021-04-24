@@ -1,10 +1,20 @@
 #header{
-    color: black;
-    padding: 50px 350px;
+    height: 90vh !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
     
     
+    
+    .header-shadow{
+        background: rgba(0, 0, 0, 0.568) !important;
+    }
 
     .header-container{
+        position: relative;
+        color: white;
+        padding: 50px 350px;
         display: flex;
         align-items: center;
         
@@ -20,6 +30,7 @@
                 font-size: 2.5rem;
                 white-space: nowrap;
                 font-family: 'Parisienne', cursive;
+                text-shadow: 2px 2px rgba(0, 0, 0, 0.342);
             }
 
             
@@ -34,7 +45,7 @@
 
             .section-1{
                 padding-bottom: 10px;
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid white;
 
                 ul{
 
@@ -43,7 +54,7 @@
                         padding: 0 8px;
                         a{
                             text-decoration: none;
-                            color: black;
+                            color: white;
                             margin: 0px 0 0 15px;
                             
                         }
@@ -62,7 +73,7 @@
 
                         a{
                             text-decoration: none;
-                            color: black;
+                            color: white !important;
                             margin: 0px 0 0 15px;
 
                             &:nth-last-child(1){
@@ -70,7 +81,7 @@
                             }
 
                             &:hover{
-                                border-bottom: 1px solid black;
+                                border-bottom: 1px solid white !important;
                             }
                         }
 
@@ -79,15 +90,15 @@
 
                     .reserve{
                         padding: 5px 12px;
-                        border: 1px solid black;
+                        border: 1px solid white ;
 
 
                         &:hover{
-                            background: black;
+                            background: white;
 
                            a{
                                border: none;
-                               color: white;
+                               color: black !important;
                            } 
 
                         }
@@ -98,4 +109,19 @@
     
         }
     }
+
+    .slide{
+        
+        
+        img{
+            height: 70vh;
+            width: 100%;
+        }
+    }
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%
 }
